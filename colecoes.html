@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/colecoes.css">
+    <link rel="shortcut icon" href="img/logo.png">
+    <title>Coleções | ReptiQuest</title>
+</head>
+
+<body>
+    <header>
+        <a href="pagInicial.html"><img src="img/seta-esquerda.png" alt="seta-esquerda"></a>
+        <div class="logo">
+            <img src="./img/logo.png">
+            <h1>
+                ReptiQuest
+            </h1>
+        </div>
+
+    </header>
+    <main>
+        <div class="top-colecoes">
+            <h1>Coleções Répteis</h1>
+            <p>Explore nossa coleção de répteis e descubra informações fascinantes sobre estas criaturas incríveis!</p>
+            <div class="container-btns-colecoes">
+                <button data-id="1" onclick="abrirTodos()">Todos</button>
+                <button data-id="2" onclick="abrirSerpentes()">Serpentes</button>
+                <button data-id="3" onclick="abrirLagartos()">Lagartos</button>
+                <button data-id="4" onclick="abrirTartarugas()">Tartarugas</button>
+                <button data-id="5" onclick="abrirCrocolianos()">Crocodilianos</button>
+            </div>
+        </div>
+        <div class="container-conteudo">
+            <div class="container-serpentes">
+                <div class="titulo-serpente">
+                    <h1>SERPENTES</h1>
+                    <p> As <strong>serpentes</strong> (ou cobras) são répteis pertencentes à <strong>ordem Squamata</strong>. Elas possuem uma grande
+                        diversidade de espécies, com mais de 3.000 tipos conhecidos, e podem ser encontradas em
+                        praticamente todos os continentes, exceto na Antártida.</p>
+                </div>
+                <div class="conteudo-serpente">
+                    <div class="top-conteudo-serpente">
+                        <div class="caracteristicas-serpente">
+                            <h2>CARACTERISTICAS</h2>
+                            <ul>
+                                <li><p><strong>Corpo alongado:</strong> Elas não têm patas e possuem um corpo cilíndrico, adaptado para
+                                    rastejar e se mover de forma eficiente.</p></li>
+                                <li><p><strong>Escamas:</strong> A pele é coberta por escamas, que facilitam o movimento e protegem o corpo.</p></li>
+                                <li><p><strong>Fisiologia:</strong> São ectotérmicas, ou seja, dependem da temperatura do ambiente para regular a temperatura do corpo.</p></li>
+                                <li><p><strong>Sentidos:</strong> Sua visão varia conforme a espécie, com algumas tendo boa visão e outras com visão limitada. Elas têm uma excelente percepção de cheiro através do órgão de Jacobson, que detecta sinais químicos no ambiente.</p></li>
+                            </ul>
+                        </div>
+                        <img src="img/serpente/serpente-img1.png" alt="" width="405px">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="JS/colecoes.js"></script>
+</body>
+
+</html>

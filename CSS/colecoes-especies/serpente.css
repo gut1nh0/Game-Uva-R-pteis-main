@@ -1,0 +1,52 @@
+.container-serpentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.container-serpentes p{
+    font-size: 20px;
+}
+
+.titulo-serpente h1{
+    color: #2C762A;
+    font-size: 35px;
+    position: relative;
+    bottom: 15px;
+}
+
+.titulo-serpente p{
+    text-indent: 30px;
+    font-size: 22px;
+}
+
+.conteudo-serpentes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+}
+
+.top-conteudo-serpente{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.top-conteudo-serpente h2{
+    position: relative;
+    right: 15px;
+    color: #0A3E0A;
+}
+
+.caracteristicas-serpente h2{
+    font-size: 28px;
+}
+
+.caracteristicas-serpente p {
+    font-size: 22px;
+}

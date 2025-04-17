@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Keania+One&display=swap');
+@import url('./colecoes-especies/serpente.css');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #072C07;
+}
+body{
+    height: 100%;
+    font-family: "Afacad", sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #F5F5F5;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    width: 100vp;
+    height: 10vh;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 3em;
+    gap: 40px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-family: "Keania One", sans-serif;
+    color: #0A3E0A;
+}
+
+
+
+.logo img{
+    width: 41px;
+    height: 41px;
+    margin-right: 20px;
+}
+
+header img{
+    width: 30px;
+}
+
+main{
+    height: 90vh;
+    background-color: #F5F5F5;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-colecoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    color: #0A3E0A;
+    width: 100%;
+    padding-top: 5em;
+}
+
+.top-colecoes h1{
+    font-size: 70px;
+}
+
+
+.top-colecoes p{
+    font-size: 25px;
+    width: 75%;
+}
+
+.container-btns-colecoes{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.container-btns-colecoes button{
+    height:auto;
+    width: auto;
+    font-family: "Afacad", sans-serif;
+    font-size: 25px;
+    padding: 2px 10px;
+    background-color: transparent;
+    border: 2px solid #98C897;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.container-btns-colecoes button:hover{
+    transform: scale(1.1);
+    background: #346133;
+    border: none;
+    color: white;
+}
+
+.container-conteudo{
+    display: flex;
+    flex-direction: column;
+    padding: 4em;
+    align-items: center;
+    width: 100%;
+    padding-top: 7em;
+}
+
+
+
+
+
