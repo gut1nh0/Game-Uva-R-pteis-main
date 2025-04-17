@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -24,19 +24,21 @@
         <div class="top-colecoes">
             <h1>Coleções Répteis</h1>
             <p>Explore nossa coleção de répteis e descubra informações fascinantes sobre estas criaturas incríveis!</p>
-            <div class="container-btns-colecoes">
-                <button data-id="1" onclick="abrirTodos()">Todos</button>
-                <button data-id="2" onclick="abrirSerpentes()">Serpentes</button>
-                <button data-id="3" onclick="abrirLagartos()">Lagartos</button>
-                <button data-id="4" onclick="abrirTartarugas()">Tartarugas</button>
-                <button data-id="5" onclick="abrirCrocolianos()">Crocodilianos</button>
+            <div class="container-btns">
+                <button class="btn-colecao" onclick="abrirTodos(this)">Todos</button>
+                <button class="btn-colecao" onclick="abrirConteudo('serpente', this)">Serpentes</button>
+                <button class="btn-colecao" onclick="abrirConteudo('lagarto', this)">Lagartos</button>
+                <button class="btn-colecao" onclick="abrirConteudo('tartaruga', this)">Tartarugas</button>
+                <button class="btn-colecao" onclick="abrirConteudo('crocodilianos', this)">Crocodilianos</button>
             </div>
         </div>
         <div class="container-conteudo">
-            <div class="container-serpentes">
+            <div class="container serpentes ativado" id="serpente">
                 <div class="titulo-serpente">
+                    <hr>
                     <h1>SERPENTES</h1>
-                    <p> As <strong>serpentes</strong> (ou cobras) são répteis pertencentes à <strong>ordem Squamata</strong>. Elas possuem uma grande
+                    <p> As <strong>serpentes</strong> (ou cobras) são répteis pertencentes à <strong>ordem
+                            Squamata</strong>. Elas possuem uma grande
                         diversidade de espécies, com mais de 3.000 tipos conhecidos, e podem ser encontradas em
                         praticamente todos os continentes, exceto na Antártida.</p>
                 </div>
@@ -45,15 +47,131 @@
                         <div class="caracteristicas-serpente">
                             <h2>CARACTERISTICAS</h2>
                             <ul>
-                                <li><p><strong>Corpo alongado:</strong> Elas não têm patas e possuem um corpo cilíndrico, adaptado para
-                                    rastejar e se mover de forma eficiente.</p></li>
-                                <li><p><strong>Escamas:</strong> A pele é coberta por escamas, que facilitam o movimento e protegem o corpo.</p></li>
-                                <li><p><strong>Fisiologia:</strong> São ectotérmicas, ou seja, dependem da temperatura do ambiente para regular a temperatura do corpo.</p></li>
-                                <li><p><strong>Sentidos:</strong> Sua visão varia conforme a espécie, com algumas tendo boa visão e outras com visão limitada. Elas têm uma excelente percepção de cheiro através do órgão de Jacobson, que detecta sinais químicos no ambiente.</p></li>
+                                <li>
+                                    <p><strong>Corpo alongado:</strong> Elas não têm patas e possuem um corpo
+                                        cilíndrico, adaptado para
+                                        rastejar e se mover de forma eficiente.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Escamas:</strong> A pele é coberta por escamas, que facilitam o movimento
+                                        e protegem o corpo.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Fisiologia:</strong> São ectotérmicas, ou seja, dependem da temperatura
+                                        do ambiente para regular a temperatura do corpo.</p>
+                                </li>
+                                <li>
+                                    <p><strong>Sentidos:</strong> Sua visão varia conforme a espécie, com algumas tendo
+                                        boa visão e outras com visão limitada. Elas têm uma excelente percepção de
+                                        cheiro através do órgão de Jacobson, que detecta sinais químicos no ambiente.
+                                    </p>
+                                </li>
                             </ul>
                         </div>
                         <img src="img/serpente/serpente-img1.png" alt="" width="405px">
                     </div>
+                    <div class="bottom-conteudo-serpente">
+                        <p> As serpentes são carnívoras e se alimentam de roedores, anfíbios, répteis, aves e outros
+                            mamíferos. Elas caçam de duas formas principais:</p>
+                        <p><strong>Constrição:</strong> Apertam suas presas até asfixiá-las.</p>
+                        <p><strong>Veneno:</strong>Algumas utilizam glândulas venenosas para injetar toxinas e matar ou
+                            imobilizar suas presas.</p>
+                        <p>As serpentes podem ser <strong>ovíparas</strong> (colocam ovos) ou <strong>vivíparas</strong>
+                            (dão à luz filhotes já formados). O tipo de <strong>reprodução</strong> varia conforme a
+                            espécie.</p>
+                    </div>
+                    <div class="cards-serpente-container">
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card1.png" width="300px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Jibóia</h2>
+                                <p> As jibóias são animais noturnos que apresentam hábitos terrestres e semiaquáticos.
+                                    Esses animais, que possuem corpo cilíndrico e amplo, apresentam alimentação variada,
+                                    dependendo da subespécie estudada.</p>
+                            </div>
+                        </div>
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card2.png" width="300px" height="200px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Sucuri</h2>
+                                <p> Está entre as maiores serpentes do planeta. Apresentam hábitos semiaquáticos, são
+                                    ótimas nadadoras e caçam emboscando presas. São animais carnívoros que matam suas
+                                    vítimas por constrição.</p>
+                            </div>
+
+                        </div>
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card3.png" width="300px" height="200px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Cobra-coral</h2>
+                                <p> Sua pele é decorada por listras que intercalam preto, vermelho e branco, sendo que
+                                    algumas espécies da região amazônica também apresentam listras amareladas.</p>
+                            </div>
+                        </div>
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card4.png" width="300px" height="200px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Cascavel</h2>
+                                <p> Famosa por seu chocalho na cauda, que produz um som característico para alertar
+                                    predadores. É venenosa e caça pequenos mamíferos.</p>
+                            </div>
+                        </div>
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card5.png" width="300px" height="200px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Naja</h2>
+                                <p> Conhecida por expandir o pescoço quando se sente ameaçada. Algumas espécies podem
+                                    cuspir veneno em seus inimigos a distância.</p>
+                            </div>
+                        </div>
+                        <div class="card-serpente">
+                            <img src="./img/serpente/serpente-card6.png" width="300px" height="200px" alt="">
+                            <div class="conteudo-card">
+                                <h2>Píton-real</h2>
+                                <p> Também chamada de "python bola", pois enrola seu corpo quando se sente ameaçada. É
+                                    uma das cobras mais populares como pet exótico.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="container lagartos ativado" id="lagarto">
+                <div class="titulo-lagarto">
+                    <hr>
+                    <h1>LAGARTOS</h1>
+                    <p>Os lagartos são répteis pertencentes à ordem Squamata, que também inclui cobras e anfisbênios.
+                        Eles têm corpos geralmente alongados, caudas compridas, quatro patas bem desenvolvidas (embora
+                        algumas espécies sejam ápodes, ou seja, sem patas), e pele coberta por escamas.</p>
+                </div>
+                <div class="top-conteudo-serpente">
+                    <div class="caracteristicas-lagarto">
+                        <h2>CARACTERISTICAS</h2>
+                        <ul>
+                            <li>
+                                <p><strong>Corpo alongado:</strong> Elas não têm patas e possuem um corpo cilíndrico,
+                                    adaptado para
+                                    rastejar e se mover de forma eficiente.</p>
+                            </li>
+                            <li>
+                                <p><strong>Escamas:</strong> A pele é coberta por escamas, que facilitam o movimento e
+                                    protegem o corpo.</p>
+                            </li>
+                            <li>
+                                <p><strong>Fisiologia:</strong> São ectotérmicas, ou seja, dependem da temperatura do
+                                    ambiente para regular a temperatura do corpo.</p>
+                            </li>
+                            <li>
+                                <p><strong>Sentidos:</strong> Sua visão varia conforme a espécie, com algumas tendo boa
+                                    visão e outras com visão limitada. Elas têm uma excelente percepção de cheiro
+                                    através do órgão de Jacobson, que detecta sinais químicos no ambiente.</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="campo-imagem-lagarto"><img src="img/lagarto/lagarto-img1.png" alt="" width="550px">
+                        <img src="img/lagarto/lagarto-img2.png" alt="" width="550px">
+                    </div>
+
                 </div>
             </div>
         </div>

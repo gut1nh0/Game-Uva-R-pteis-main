@@ -1,0 +1,124 @@
+.lagartos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.lagartos p{
+    font-size: 20px;
+}
+
+.titulo-lagarto h1{
+    color: #2C762A;
+    font-size: 35px;
+    position: relative;
+    bottom: 15px;
+}
+
+.titulo-lagarto p{
+    text-indent: 30px;
+    font-size: 22px;
+}
+
+.titulo-lagarto hr{
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+    border: 1px solid var(--cor-subtitulo);
+}
+
+.conteudo-lagarto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+}
+
+.top-conteudo-lagarto{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+
+.top-conteudo-lagarto h2{
+    position: relative;
+    right: 15px;
+    color: #0A3E0A;
+}
+
+.campo-imagem-lagarto {
+    position: relative;
+    bottom: 100px;
+}
+
+.caracteristicas-lagarto h2{
+    font-size: 28px;
+}
+
+.caracteristicas-lagarto p {
+    font-size: 22px;
+    width: 90%;
+}
+
+.bottom-conteudo-lagarto{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+}
+
+.bottom-conteudo-largato p{
+    font-size: 22px;
+}
+
+.bottom-conteudo-lagarto p:first-child{
+    text-indent: 30px;
+}
+
+.bottom-conteudo-lagarto p:last-child{
+    position: relative;
+    text-indent: 30px;
+    top: 20px;
+}
+
+.cards-lagarto-container{
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-lagarto{
+    height: 400px;
+    width: 300px;
+    border: 2px solid var(--cor-bordas);
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-lagarto img{
+    object-fit: cover;
+}
+
+.conteudo-card h2{
+    font-size: 22px;
+    padding:0 0.5em;
+}
+
+.conteudo-card p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0.3em;
+    width: 100%;
+}

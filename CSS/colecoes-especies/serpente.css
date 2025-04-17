@@ -1,4 +1,4 @@
-.container-serpentes{
+.serpentes{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,7 +6,7 @@
     width: 65%;
 }
 
-.container-serpentes p{
+.serpentes p{
     font-size: 20px;
 }
 
@@ -22,12 +22,18 @@
     font-size: 22px;
 }
 
+.titulo-serpente hr{
+    width: 100px;
+    position: relative;
+    bottom: 10px;
+    border: 1px solid var(--cor-subtitulo);
+}
 .conteudo-serpentes{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    justify-content: center;
+    
 }
 
 .top-conteudo-serpente{
@@ -36,6 +42,7 @@
     top: 40px;
     left: 20px;
 }
+
 
 .top-conteudo-serpente h2{
     position: relative;
@@ -49,4 +56,63 @@
 
 .caracteristicas-serpente p {
     font-size: 22px;
+    width: 90%;
+}
+
+.bottom-conteudo-serpente{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 89%;
+}
+
+.bottom-conteudo-serpente p{
+    font-size: 22px;
+}
+
+.bottom-conteudo-serpente p:first-child{
+    text-indent: 30px;
+}
+
+.bottom-conteudo-serpente p:last-child{
+    position: relative;
+    text-indent: 30px;
+    top: 20px;
+}
+
+.cards-serpente-container{
+    position: relative;
+    top: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 35px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-serpente{
+    height: 400px;
+    width: 300px;
+    border: 2px solid var(--cor-bordas);
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card-serpente img{
+    object-fit: cover;
+}
+
+.conteudo-card h2{
+    font-size: 22px;
+    padding:0 0.5em;
+}
+
+.conteudo-card p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0.3em;
+    width: 100%;
 }
