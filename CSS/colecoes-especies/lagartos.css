@@ -10,6 +10,10 @@
     font-size: 20px;
 }
 
+.titulo-lagarto {
+    width: 85%;
+}
+
 .titulo-lagarto h1{
     color: #2C762A;
     font-size: 35px;
@@ -34,7 +38,6 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    
 }
 
 .top-conteudo-lagarto{
@@ -53,7 +56,17 @@
 
 .campo-imagem-lagarto {
     position: relative;
-    bottom: 100px;
+    bottom: 180px;
+}
+
+.campo-imagem-lagarto img[data-id="2"]{
+    position: relative;
+    left: 60px;
+    bottom: 50px;
+}
+
+.caracteristicas-lagarto{
+    width: 1000px;
 }
 
 .caracteristicas-lagarto h2{
@@ -62,37 +75,16 @@
 
 .caracteristicas-lagarto p {
     font-size: 22px;
-    width: 90%;
+    width: 110%;
 }
 
-.bottom-conteudo-lagarto{
-    position: relative;
-    top: 50px;
-    display: flex;
-    flex-direction: column;
-    width: 89%;
-}
-
-.bottom-conteudo-largato p{
-    font-size: 22px;
-}
-
-.bottom-conteudo-lagarto p:first-child{
-    text-indent: 30px;
-}
-
-.bottom-conteudo-lagarto p:last-child{
-    position: relative;
-    text-indent: 30px;
-    top: 20px;
-}
 
 .cards-lagarto-container{
     position: relative;
-    top: 120px;
+    bottom: 130px;
     display: flex;
     flex-wrap: wrap;
-    gap: 35px;
+    gap: 30px;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -122,3 +114,5 @@
     padding: 0.3em;
     width: 100%;
 }
+
+
