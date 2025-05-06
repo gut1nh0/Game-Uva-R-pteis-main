@@ -3,6 +3,7 @@
 @import url('./root.css');
 @import url('./colecoes-especies/serpente.css');
 @import url('./colecoes-especies/lagartos.css');
+@import url('./colecoes-especies/quelonios.css');
 
 *{
     padding: 0;
@@ -17,6 +18,7 @@ body{
     flex-direction: column;
     background-color: #F5F5F5;
     width: 100%;
+    font-size: 22px;
 }
 
 header{
@@ -117,6 +119,120 @@ main{
     padding-top: 7em;
     gap: 200px;
     padding-bottom: 5em;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 65%;
+}
+
+.titulo h1{
+    color: #2C762A;
+    font-size: 35px;
+    position: relative;
+    bottom: 15px;
+}
+
+.titulo p{
+    text-indent: 30px;
+    font-size: 22px;
+}
+
+.titulo hr{
+    width: 70px;
+    position: relative;
+    bottom: 10px;
+    border: 1px solid var(--cor-subtitulo);
+}
+
+.intro{
+    width: 100%;
+    display: flex;
+    height: 250px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.top-conteudo{
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 20px;
+}
+
+.top-conteudo h2{
+    position: relative;
+    right: 15px;
+    color: #0A3E0A;
+}
+
+.caracteristicas h2{
+    font-size: 28px;
+}
+
+.caracteristicas p {
+    font-size: 22px;
+    width: 90%;
+}
+
+.bottom-conteudo{
+    position: relative;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.bottom-conteudo p:first-child{
+    text-indent: 30px;
+}
+
+
+.bottom-conteudo p:last-child{
+    position: relative;
+    text-indent: 30px;
+    top: 20px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    border: 2px solid var(--cor-bordas);
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.card img{
+    object-fit: cover;
+}
+
+.conteudo-card h2{
+    font-size: 22px;
+    padding:0 0.5em;
+}
+
+.conteudo-card p{
+    font-size: 16px;
+    text-align: center;
+    padding: 0.3em;
+    width: 100%;
 }
 
 .ativado{

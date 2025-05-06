@@ -28,13 +28,13 @@
                 <button class="btn-colecao" onclick="abrirTodos(this)">Todos</button>
                 <button class="btn-colecao" onclick="abrirConteudo('serpente', this)">Serpentes</button>
                 <button class="btn-colecao" onclick="abrirConteudo('lagarto', this)">Lagartos</button>
-                <button class="btn-colecao" onclick="abrirConteudo('tartaruga', this)">Tartarugas</button>
+                <button class="btn-colecao" onclick="abrirConteudo('quelonios', this)">Quelônios</button>
                 <button class="btn-colecao" onclick="abrirConteudo('crocodilianos', this)">Crocodilianos</button>
             </div>
         </div>
         <div class="container-conteudo">
             <div class="container serpentes ativado" id="serpente">
-                <div class="titulo-serpente">
+                <div class="titulo" id="serpente">
                     <hr>
                     <h1>SERPENTES</h1>
                     <p> As <strong>serpentes</strong> (ou cobras) são répteis pertencentes à <strong>ordem
@@ -42,9 +42,9 @@
                         diversidade de espécies, com mais de 3.000 tipos conhecidos, e podem ser encontradas em
                         praticamente todos os continentes, exceto na Antártida.</p>
                 </div>
-                <div class="conteudo-serpente">
-                    <div class="top-conteudo-serpente">
-                        <div class="caracteristicas-serpente">
+                <div class="conteudo" id="serpente">
+                    <div class="top-conteudo" id="serpente">
+                        <div class="caracteristicas" id="serpente">
                             <h2>CARACTERISTICAS</h2>
                             <ul>
                                 <li>
@@ -70,7 +70,7 @@
                         </div>
                         <img src="img/serpente/serpente-img1.png" alt="" width="405px">
                     </div>
-                    <div class="bottom-conteudo-serpente">
+                    <div class="bottom-conteudo" id="serpente">
                         <p> As serpentes são carnívoras e se alimentam de roedores, anfíbios, répteis, aves e outros
                             mamíferos. Elas caçam de duas formas principais:</p>
                         <p><strong>Constrição:</strong> Apertam suas presas até asfixiá-las.</p>
@@ -80,8 +80,8 @@
                             (dão à luz filhotes já formados). O tipo de <strong>reprodução</strong> varia conforme a
                             espécie.</p>
                     </div>
-                    <div class="cards-serpente-container">
-                        <div class="card-serpente">
+                    <div class="cards-container" id="serpente">
+                        <div class="card" id="serpente">
                             <img src="./img/serpente/serpente-card1.png" width="300px" alt="">
                             <div class="conteudo-card">
                                 <h2>Jibóia</h2>
@@ -90,7 +90,7 @@
                                     dependendo da subespécie estudada.</p>
                             </div>
                         </div>
-                        <div class="card-serpente">
+                        <div class="card">
                             <img src="./img/serpente/serpente-card2.png" width="300px" height="200px" alt="">
                             <div class="conteudo-card">
                                 <h2>Sucuri</h2>
@@ -100,7 +100,7 @@
                             </div>
 
                         </div>
-                        <div class="card-serpente">
+                        <div class="card">
                             <img src="./img/serpente/serpente-card3.png" width="300px" height="200px" alt="">
                             <div class="conteudo-card">
                                 <h2>Cobra-coral</h2>
@@ -108,7 +108,7 @@
                                     algumas espécies da região amazônica também apresentam listras amareladas.</p>
                             </div>
                         </div>
-                        <div class="card-serpente">
+                        <div class="card">
                             <img src="./img/serpente/serpente-card4.png" width="300px" height="200px" alt="">
                             <div class="conteudo-card">
                                 <h2>Cascavel</h2>
@@ -116,7 +116,7 @@
                                     predadores. É venenosa e caça pequenos mamíferos.</p>
                             </div>
                         </div>
-                        <div class="card-serpente">
+                        <div class="card">
                             <img src="./img/serpente/serpente-card5.png" width="300px" height="200px" alt="">
                             <div class="conteudo-card">
                                 <h2>Naja</h2>
@@ -124,7 +124,7 @@
                                     cuspir veneno em seus inimigos a distância.</p>
                             </div>
                         </div>
-                        <div class="card-serpente">
+                        <div class="card">
                             <img src="./img/serpente/serpente-card6.png" width="300px" height="200px" alt="">
                             <div class="conteudo-card">
                                 <h2>Píton-real</h2>
@@ -137,80 +137,77 @@
                 </div>
             </div>
             <div class="container lagartos ativado" id="lagarto">
-                <div class="titulo-lagarto">
+                <div class="titulo" id="lagarto">
                     <hr>
                     <h1>LAGARTOS</h1>
                     <p>Os lagartos são répteis pertencentes à ordem Squamata, que também inclui cobras e anfisbênios.
                         Eles têm corpos geralmente alongados, caudas compridas, quatro patas bem desenvolvidas (embora
-                        algumas espécies sejam ápodes, ou seja, sem patas), e pele coberta por escamas.</p>
+                        algumas espécies sejam ápodes, ou seja, sem patas), e pele <br> coberta por escamas.</p>
                 </div>
-                <div class="top-conteudo-serpente">
-                    <div class="caracteristicas-lagarto">
+                <div class="top-conteudo" id="lagarto">
+                    <div class="caracteristicas" id="lagarto">
                         <h2>CARACTERISTICAS</h2>
                         <ul>
                             <li>
-                                <p><strong>Corpo alongado:</strong> Elas não têm patas e possuem um corpo cilíndrico,
-                                    adaptado para
-                                    rastejar e se mover de forma eficiente.</p>
+                                <p><strong>Tamanho variado:</strong> Desde poucos centímetros (como os anolis) até grandes espécies como o dragão-de-komodo, que pode atingir até 3 metros.</p>
                             </li>
                             <li>
-                                <p><strong>Escamas:</strong> A pele é coberta por escamas, que facilitam o movimento e
-                                    protegem o corpo.</p>
+                                <p><strong>Hábitos alimentares:</strong> A maioria é carnívora, se alimentando de insetos, pequenos mamíferos e outros répteis. Algumas espécies são herbívoras ou onívoras.</p>
                             </li>
                             <li>
-                                <p><strong>Fisiologia:</strong> São ectotérmicas, ou seja, dependem da temperatura do
-                                    ambiente para regular a temperatura do corpo.</p>
+                                <p><strong>Habitat:</strong> Podem ser encontrados em praticamente todos os continentes, com exceção da Antártica, habitando desertos, florestas, áreas rochosas e até ambientes urbanos.</p>
                             </li>
                             <li>
-                                <p><strong>Sentidos:</strong> Sua visão varia conforme a espécie, com algumas tendo boa
-                                    visão e outras com visão limitada. Elas têm uma excelente percepção de cheiro
-                                    através do órgão de Jacobson, que detecta sinais químicos no ambiente.</p>
+                                <p><strong>Comportamento:</strong> Muitos lagartos são territoriais e podem mudar de cor para comunicação ou camuflagem.</p>
+                            </li>
+                            <li>
+                                <p><strong>Reprodução: </strong> A maioria é ovípara (bota ovos), mas algumas espécies são vivíparas (dão à luz filhotes vivos).</p>
                             </li>
                         </ul>
                     </div>
-                    <div class="campo-imagem-lagarto">
+                    <div class="campo-imagem" id="lagarto">
                         <img src="img/lagarto/lagarto-img1.png" alt="" width="470px" data-id="1">
                         <img src="img/lagarto/lagarto-img2.png" alt="" width="400px" data-id="2">
                     </div>
                     
                 </div>
-                <div class="cards-lagarto-container">
-                    <div class="card-lagarto">
+                <div class="cards-container" id="lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card1.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Iguana-verde</h2>
                             <p> Herbívora e excelente nadadora, a iguana-verde é um dos lagartos mais comuns das florestas tropicais. Possui espinhos ao longo do dorso e pode mudar de cor para regular sua temperatura.</p>
                         </div>
                     </div>
-                    <div class="card-lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card2.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Teiú</h2>
                             <p>Conhecido por sua inteligência, o teiú é um lagarto onívoro que se adapta a diferentes ambientes. Tem escamas pretas e brancas e pode crescer até 1,5 metro de comprimento.</p>
                         </div>
                     </div>
-                    <div class="card-lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card3.png" width="300px"  height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Lagarto-de-chifres</h2>
                             <p> Pequeno e robusto, esse lagarto possui espinhos na cabeça e um mecanismo de defesa único: ele pode expelir sangue pelos olhos para assustar predadores.</p>
                         </div>
                     </div>
-                    <div class="card-lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card4.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Dragão-barbudo</h2>
                             <p> Originário da Austrália, o dragão-barbudo tem escamas pontudas na garganta que se eriçam quando está ameaçado. É um lagarto tranquilo e muito popular como pet.</p>
                         </div>
                     </div>
-                    <div class="card-lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card5.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Camaleão-pantera</h2>
                             <p>  Mestre da camuflagem, esse camaleão pode mudar de cor para comunicação e regulação térmica. Seus olhos se movem independentemente, permitindo uma visão panorâmica.</p>
                         </div>
                     </div>
-                    <div class="card-lagarto">
+                    <div class="card" id="lagarto">
                         <img src="./img/lagarto/lagarto-card6.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card">
                             <h2>Calango-verde</h2>
@@ -219,6 +216,89 @@
                     </div>
                 </div>
             </div>
+            <div class="container quelonios ativado" id="quelonios">
+                <div class="titulo" id="quelonios">
+                    <hr>
+                    <h1>Quelônios</h1>
+                    <div class="intro" id="quelonios">
+                        <p>Os quelônios são répteis pertencentes à ordem Testudines, conhecidas por seu corpo protegido por um casco resistente. Existem mais de 300 espécies espalhadas pelo mundo, podendo ser encontradas em ambientes aquáticos — como oceanos, rios e lagos — ou em terra firme.</p>
+                        <img src="./img/tartaruga/quelonio-img1.png" alt="tartaruga-marinha">
+                    </div>
+                    
+                </div>
+                <div class="top-conteudo" id="quelonios">
+                    <div class="caracteristicas" id="quelonios">
+                        <h2>CARACTERISTICAS</h2>
+                        <ul>
+                            <li>
+                                <p><strong>Tamanho variado:</strong> Desde poucos centímetros (como os anolis) até grandes espécies como o dragão-de-komodo, que pode atingir até 3 metros.</p>
+                            </li>
+                            <li>
+                                <p><strong>Hábitos alimentares:</strong> A maioria é carnívora, se alimentando de insetos, pequenos mamíferos e outros répteis. Algumas espécies são herbívoras ou onívoras.</p>
+                            </li>
+                            <li>
+                                <p><strong>Habitat:</strong> Podem ser encontrados em praticamente todos os continentes, com exceção da Antártica, habitando desertos, florestas, áreas rochosas e até ambientes urbanos.</p>
+                            </li>
+                            <li>
+                                <p><strong>Comportamento:</strong> Muitos lagartos são territoriais e podem mudar de cor para comunicação ou camuflagem.</p>
+                            </li>
+                            <li>
+                                <p><strong>Reprodução: </strong> A maioria é ovípara (bota ovos), mas algumas espécies são vivíparas (dão à luz filhotes vivos).</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="campo-imagem" id="quelonios">
+                        <img src="img/lagarto/lagarto-img1.png" alt="" width="470px" data-id="1">
+                        <img src="img/lagarto/lagarto-img2.png" alt="" width="400px" data-id="2">
+                    </div>
+                    
+                </div>
+                <div class="cards-container" id="quelonios">
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card1.png" width="300px" height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Iguana-verde</h2>
+                            <p> Herbívora e excelente nadadora, a iguana-verde é um dos lagartos mais comuns das florestas tropicais. Possui espinhos ao longo do dorso e pode mudar de cor para regular sua temperatura.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card2.png" width="300px" height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Teiú</h2>
+                            <p>Conhecido por sua inteligência, o teiú é um lagarto onívoro que se adapta a diferentes ambientes. Tem escamas pretas e brancas e pode crescer até 1,5 metro de comprimento.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card3.png" width="300px"  height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Lagarto-de-chifres</h2>
+                            <p> Pequeno e robusto, esse lagarto possui espinhos na cabeça e um mecanismo de defesa único: ele pode expelir sangue pelos olhos para assustar predadores.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card4.png" width="300px" height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Dragão-barbudo</h2>
+                            <p> Originário da Austrália, o dragão-barbudo tem escamas pontudas na garganta que se eriçam quando está ameaçado. É um lagarto tranquilo e muito popular como pet.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card5.png" width="300px" height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Camaleão-pantera</h2>
+                            <p>  Mestre da camuflagem, esse camaleão pode mudar de cor para comunicação e regulação térmica. Seus olhos se movem independentemente, permitindo uma visão panorâmica.</p>
+                        </div>
+                    </div>
+                    <div class="card" id="quelonios">
+                        <img src="./img/lagarto/lagarto-card6.png" width="300px" height="200px" alt="">
+                        <div class="conteudo-card">
+                            <h2>Calango-verde</h2>
+                            <p>  Rápido e ágil, esse lagarto é encontrado no Brasil e pode escalar árvores com facilidade. Tem uma coloração vibrante que ajuda na camuflagem entre as folhas. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
     </main>
     <script src="JS/colecoes.js"></script>
 </body>

@@ -1,0 +1,11 @@
+#quelonios.intro> p{
+    width: 200%
+}
+
+#quelonios.intro img{
+    position: relative;
+    bottom: 20px;
+    left: 50px;
+    width: 600px;
+    height: 300px;
+}
