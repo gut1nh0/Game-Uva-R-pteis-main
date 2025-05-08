@@ -1,11 +1,46 @@
-#quelonios.intro> p{
-    width: 200%
+#quelonios.container{
+    margin-top: -250px;
+}
+
+#quelonios.intro{
+    width: 1100px;
+}
+
+#quelonios.intro p{
+    width: 100%;
 }
 
 #quelonios.intro img{
     position: relative;
     bottom: 20px;
-    left: 50px;
     width: 600px;
     height: 300px;
+    right: 80px;
+}
+
+#quelonios.top-conteudo{
+    margin-top: -75px
+}
+
+#parte1-quelonios{
+    width: 47%;
+}
+#parte1-quelonios img{
+    position: relative;
+    right: 50px;
+    top: 30px;
+}
+
+#parte2-quelonios{
+    width: 550px;
+}
+
+#quelonios.cards-container{
+    margin-top: 100px;
+}
+
+#quelonios.conteudo-card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
