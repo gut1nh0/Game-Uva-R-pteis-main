@@ -25,11 +25,11 @@
             <h1>Coleções Répteis</h1>
             <p>Explore nossa coleção de répteis e descubra informações fascinantes sobre estas criaturas incríveis!</p>
             <div class="container-btns">
-                <!-- <button class="btn-colecao" onclick="" >Todos</button> -->
-                <button class="btn-colecao" onclick="location.href='#serpente'">Serpentes</button>
-                <button class="btn-colecao" onclick="location.href='#lagarto'">Lagartos</button>
-                <button class="btn-colecao" onclick="location.href='#quelonios'">Quelônios</button>
-                <button class="btn-colecao" onclick="location.href='#crocodilianos'">Crocodilianos</button>
+                <button class="btn-colecao" onclick="abrirTodos(this)">Todos</button>
+                <button class="btn-colecao" onclick="abrirConteudo('serpente', this)">Serpentes</button>
+                <button class="btn-colecao" onclick="abrirConteudo('lagarto', this)">Lagartos</button>
+                <button class="btn-colecao" onclick="abrirConteudo('quelonios', this)">Quelônios</button>
+                <button class="btn-colecao" onclick="abrirConteudo('crocodilianos', this)">Crocodilianos</button>
             </div>
         </div>
         <div class="container-conteudo">
@@ -233,7 +233,7 @@
             <div class="container quelonios ativado" id="quelonios">
                 <div class="titulo" id="quelonios">
                     <hr>
-                    <h1>QUELÔNIOS</h1>
+                    <h1>Quelônios</h1>
                     <div class="intro" id="quelonios">
                         <p>Os quelônios são répteis pertencentes à ordem Testudines, conhecidas por seu corpo protegido
                             por um casco resistente. <br> Existem mais de 300 espécies espalhadas pelo mundo, <br>
@@ -248,14 +248,19 @@
                         <h2>CARACTERÍSTICAS</h2>
                         <div class="caracteristica-conteudo" id="quelonios">
                             <ul id="parte1-quelonios">
-                            <li>
-                                <p><strong>Casco:</strong> É a característica mais marcante. Ele é dividido em duas partes: o carapaça (parte superior) e o plastrão (parte inferior). Esse casco é formado por ossos cobertos por placas de queratina e serve como proteção contra predadores.</p>
-                            </li>
-                            <img src="./img/tartaruga/quelonio-img2.png" alt="" width="500px">
+                                <li>
+                                    <p><strong>Casco:</strong> É a característica mais marcante. Ele é dividido em duas
+                                        partes: o carapaça (parte superior) e o plastrão (parte inferior). Esse casco é
+                                        formado por ossos cobertos por placas de queratina e serve como proteção contra
+                                        predadores.</p>
+                                </li>
+                                <img src="./img/tartaruga/quelonio-img2.png" alt="" width="500px">
                             </ul>
                             <ul id="parte2-quelonios">
                                 <li>
-                                    <p><strong>Expectativa de Vida:</strong> Algumas espécies vivem <br>poucas décadas, enquanto outras, como a tartaruga-gigante-de-galápagos, podem ultrapassar os 100 anos de idade.</p>
+                                    <p><strong>Expectativa de Vida:</strong> Algumas espécies vivem <br>poucas décadas,
+                                        enquanto outras, como a tartaruga-gigante-de-galápagos, podem ultrapassar os 100
+                                        anos de idade.</p>
                                 </li>
                                 <li>
                                     <p><strong>Habitat:</strong> Podem ser encontrados em praticamente todos os
@@ -263,16 +268,23 @@
                                         rochosas e até ambientes urbanos.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Alimentação:</strong> Variam com o habitat e a espécie. Algumas são herbívoras, outras carnívoras e muitas são onívoras. </p>
+                                    <p><strong>Alimentação:</strong> Variam com o habitat e a espécie. Algumas são
+                                        herbívoras, outras carnívoras e muitas são onívoras. </p>
                                 </li>
                                 <li>
-                                    <p><strong>Respiração: </strong> Mesmo as espécies aquáticas precisam subir à superfície para respirar, pois usam pulmões — diferente dos peixes, que usam brânquias.</p>
+                                    <p><strong>Respiração: </strong> Mesmo as espécies aquáticas precisam subir à
+                                        superfície para respirar, pois usam pulmões — diferente dos peixes, que usam
+                                        brânquias.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Resprodução: </strong>  São ovíparas, ou seja, botam ovos. Normalmente, as fêmeas cavam buracos na areia ou na terra para depositá-los. Depois da eclosão, os filhotes seguem sozinhos para o ambiente natural.</p>
+                                    <p><strong>Resprodução: </strong> São ovíparas, ou seja, botam ovos. Normalmente, as
+                                        fêmeas cavam buracos na areia ou na terra para depositá-los. Depois da eclosão,
+                                        os filhotes seguem sozinhos para o ambiente natural.</p>
                                 </li>
                                 <li>
-                                    <p><strong>Lentidão e resistência:</strong> Apesar de sua movimentação lenta, são animais muito resistentes, com boa adaptação a diferentes ambientes e climas.</p>
+                                    <p><strong>Lentidão e resistência:</strong> Apesar de sua movimentação lenta, são
+                                        animais muito resistentes, com boa adaptação a diferentes ambientes e climas.
+                                    </p>
                                 </li>
                             </ul>
                         </div>
@@ -284,7 +296,8 @@
                         <img src="./img/tartaruga/quelonio-card1.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
                             <h2>Tartaruga-de-couro</h2>
-                            <p> Maior espécie de tartaruga marinha, pode atingir até 700 kg. Diferente das outras, sua carapaça não é rígida, mas sim coberta por pele grossa e resistente. </p>
+                            <p> Maior espécie de tartaruga marinha, pode atingir até 700 kg. Diferente das outras, sua
+                                carapaça não é rígida, mas sim coberta por pele grossa e resistente. </p>
                         </div>
                     </div>
                     <div class="card" id="quelonios">
@@ -299,7 +312,7 @@
                         <img src="./img/tartaruga/quelonio-card3.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
                             <h2>Tartaruga-da-amazônia</h2>
-                            <p> Vive em rios e lagos da região amazônica. As fêmeas colocam ovos em praias de areia e os 
+                            <p> Vive em rios e lagos da região amazônica. As fêmeas colocam ovos em praias de areia e os
                                 filhotes emergem ao mesmo tempo para evitar predadores.</p>
                         </div>
                     </div>
@@ -307,21 +320,24 @@
                         <img src="./img/tartaruga/quelonio-card4.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
                             <h2>Cágado-de-barbicha</h2>
-                            <p>  Um cágado aquático que tem pequenas "barbinhas" sensoriais no pescoço, ajudando a detectar presas na água.</p>
+                            <p> Um cágado aquático que tem pequenas "barbinhas" sensoriais no pescoço, ajudando a
+                                detectar presas na água.</p>
                         </div>
                     </div>
                     <div class="card" id="quelonios">
                         <img src="./img/tartaruga/quelonio-card5.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
                             <h2>Tartaruga-mordedora</h2>
-                            <p>  Possui uma mandíbula poderosa e comportamento agressivo. Pode crescer bastante e vive em águas doces da América do Norte.</p>
+                            <p> Possui uma mandíbula poderosa e comportamento agressivo. Pode crescer bastante e vive em
+                                águas doces da América do Norte.</p>
                         </div>
                     </div>
                     <div class="card" id="quelonios">
                         <img src="./img/tartaruga/quelonio-card6.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
                             <h2>Tartaruga-de-pente</h2>
-                            <p>  Espécie marinha ameaçada de extinção, famosa pelo casco bonito e utilizado ilegalmente para artesanato. Se alimenta principalmente de esponjas-do-mar.</p>
+                            <p> Espécie marinha ameaçada de extinção, famosa pelo casco bonito e utilizado ilegalmente
+                                para artesanato. Se alimenta principalmente de esponjas-do-mar.</p>
                         </div>
                     </div>
                 </div>
@@ -329,7 +345,7 @@
             <div class="container crocodilianos ativado" id="crocodilianos">
                 <div class="titulo" id="crocodilianos">
                     <hr>
-                    <h1>CROCODILIANOS</h1>
+                    <h1>Crocodilianos</h1>
                     <div class="intro" id="crocodilianos">
                         <p> Os lagartos são répteis pertencentes à ordem Squamata, que também inclui cobras e
                             anfisbênios. Eles têm corpos geralmente alongados, caudas compridas, quatro patas bem
@@ -364,61 +380,70 @@
                                 capturar peixes; vivem no sul da Ásia.</li>
                         </ol>
                     </div>
-                    <div class="bottom-conteudo-bottom" id="crocodilianos">
+                    <div class="bottom-conteudo-bottom">
                         <div class="campo-img">
                             <img src="./img/crocodilianos/crocodilianos-img2.png" alt="" width="600px">
                         </div>
                         <div class="campo-conteudo">
-                            <h2>Comportamento e reprodução:</h2>
+                            <h2>GRUPOS PRINCIPAIS:</h2>
                             <ul>
-                                <li>São animais carnívoros e oportunistas, alimentando-se de peixes, aves e mamíferos.</li>
-                                <li>Demonstram cuidado parental: constroem ninhos e protegem os filhotes por semanas ou meses após o nascimento.</li>
-                                <li>São conhecidos por sua longevidade e resistência..</li>
+                                <li>Crocodilos (família Crocodylidae): encontrados na África, Ásia, América e Austrália;
+                                    geralmente têm o focinho mais estreito e são mais agressivos.</li>
+                                <li>Jacarés e caimãs (família Alligatoridae): vivem principalmente nas Américas; têm o
+                                    focinho mais largo e são menos agressivos.</li>
+                                <li>Gaviais (família Gavialidae): possuem focinho longo e estreito, especializado para
+                                    capturar peixes; vivem no sul da Ásia.</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div class="cards-container" id="crocodilianos">
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card1.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card1.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Jacaré-do-pantanal</h2>
-                            <p> Também chamado de jacaré-do-paraguai, é um dos menores crocodilianos do Brasil. Vive em rios e pantanais e ajuda a controlar populações de piranhas. </p>
+                            <h2>Tartaruga-de-couro</h2>
+                            <p> Maior espécie de tartaruga marinha, pode atingir até 700 kg. Diferente das outras, sua
+                                carapaça não é rígida, mas sim coberta por pele grossa e resistente. </p>
                         </div>
                     </div>
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card2.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card2.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Crocodilo-do-nilo</h2>
-                            <p> Um dos maiores crocodilos do mundo, pode passar dos 5 metros de comprimento. Habita rios da África e é um predador feroz.</p>
+                            <h2>Jabuti-piranga</h2>
+                            <p> Um quelônio terrestre brasileiro, famoso por seu casco avermelhado. É herbívoro e pode
+                                viver mais de 80 anos.</p>
                         </div>
                     </div>
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card3.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card3.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Jacaré-açu</h2>
-                            <p>Maior espécie de jacaré da América do Sul, pode atingir até 6 metros. Vive em rios amazônicos e se alimenta de grandes mamíferos.</p>
+                            <h2>Tartaruga-da-amazônia</h2>
+                            <p> Vive em rios e lagos da região amazônica. As fêmeas colocam ovos em praias de areia e os
+                                filhotes emergem ao mesmo tempo para evitar predadores.</p>
                         </div>
                     </div>
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card4.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card4.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Gavial</h2>
-                            <p>Possui um focinho longo e fino, adaptado para capturar peixes. É encontrado na Índia e está criticamente ameaçado de extinção. </p>
+                            <h2>Cágado-de-barbicha</h2>
+                            <p>Um cágado aquático que tem pequenas "barbinhas" sensoriais no pescoço, ajudando a
+                                detectar presas na água.</p>
                         </div>
                     </div>
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card5.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card5.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Caiman-de-cara-lisa</h2>
-                            <p> Pequeno e discreto, vive em rios da América do Sul. Seu nome vem da pele lisa ao redor da cabeça.</p>
+                            <h2>Tartaruga-mordedora</h2>
+                            <p>Possui uma mandíbula poderosa e comportamento agressivo. Pode crescer bastante e vive em
+                                águas doces da América do Norte.</p>
                         </div>
                     </div>
                     <div class="card" id="crocodilianos">
-                        <img src="./img/crocodilianos/crocodilianos-card6.png" width="300px" height="200px" alt="">
+                        <img src="./img/tartaruga/quelonio-card6.png" width="300px" height="200px" alt="">
                         <div class="conteudo-card" id="quelonios">
-                            <h2>Crocodilo-americano</h2>
-                            <p>Habita manguezais e rios do continente americano. É mais tolerante à água salgada do que outros crocodilianos e pode nadar entre ilhas costeiras.</p>
+                            <h2>Tartaruga-de-pente</h2>
+                            <p>Espécie marinha ameaçada de extinção, famosa pelo casco bonito e utilizado ilegalmente
+                                para artesanato. Se alimenta principalmente de esponjas-do-mar.</p>
                         </div>
                     </div>
                 </div>

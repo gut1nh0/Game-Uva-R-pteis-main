@@ -1,7 +1,3 @@
-#lagarto.container{
-    margin-top: 100px;
-}
-
 #lagarto .titulo{
     width: 85%;
 }
@@ -26,6 +22,7 @@
     font-size: 22px;
     width: 110%;
 }
+
 
 #lagarto.cards-container{
     position: relative;
