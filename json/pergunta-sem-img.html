@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/logo.png">
-    <link rel="stylesheet" href="CSS/pergunta-sem-img.css">
-    <title>Perguntas</title>
+    <link rel="stylesheet" href="../CSS/pergunta-sem-img.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <img src="./img/logo.png" alt="Logo">
-        <h1>PeptiQuest</h1>
+        <img src="./img/cobra.png">
+        <h1>
+            PeptiQuest
+        </h1>
     </header>
-
     <main>
+        <button class="passar">
+            <img src="img/seta-esquerda.png" width="75px">
+        </button>
         <div class="container">
-            <div class="pontuacao">
-                <p id="pontuacao">Pontuação: 0</p>
+            <div class="pontuacao" id="pontuacao">
+                <p>100 pontos</p>
             </div>
-
-            <div class="caixa">
-                <div class="qtd-pergunta">
-                    <center><p id="numero-pergunta">1 de 20 perguntas</p></center>
+            <div class="caixa" id="caixa">
+                <div class="qtd-pergunta" id="numero-pergunta">
+                    <p>Pergunta 1 de 20</p>
                 </div>
-
-                <div class="pergunta">
-                    <h4 id="texto-pergunta"></h4>
+                <div class="pergunta" id="pergunta">
+                    <h4>Qual é o nome dessa cobra?</h4>
                 </div>
-
-                <div class="img-resposta">
-                    <div class="imagem" id="area-imagem"></div>
-
-                    <div class="repostas" id="area-respostas"></div>
+                <div class="respostas" id="respostas">
+                    <button class="btn"><p class="letra">A</p><p>Naja</p></button>
+                    <button class="btn"><p class="letra">B</p>  <p>Sucuri</p></button>
+                    <button class="btn"><p class="letra">C</p> <p>Cascavel</p></button>
+                    <button class="btn"><p class="letra">D</p> <p>Jibóia</p></button>
                 </div>
             </div>
         </div>
+        <button class="passar" id="next-btn">
+            <img src="img/seta-direita.png" width="75px">
+        </button>
     </main>
-
-    <script src="JS/quiz.js"></script>
+    <script src="quiz.js"></script>
 </body>
 </html>
