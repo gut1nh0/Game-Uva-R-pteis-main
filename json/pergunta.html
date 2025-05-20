@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/pergunta.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img src="./img/cobra.png">
+        <h1>
+            ReptiQuest
+        </h1>
+    </header>
+    <main class="container-pergunta">
+        <button onclick="voltarPergunta()"><img src="./img/seta-esquerda.png" alt=""></button>
+        <div class="campo-pergunta">
+            <div id="pontuacao">Pontuação: 0</div>
+
+            <div id="caixa">
+                <div id="pergunta"></div>
+                <div id="respostas"></div>
+            </div>
+        </div>
+        <button onclick="proximaPergunta()"><img src="./img/seta-direita.png" alt=""></button>
+    </main>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
