@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&family=Keania+One&display=swap');
+@import url('./root.css');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    width: 100vp;
+    background-color: #F5F5F5;
+    align-items: center;
+    padding: 3em;
+}
+
+h1{
+    font-family: "Keania One", sans-serif;
+    color: #0A3E0A;
+    font-size: 44px;
+}
+
+
+header img {
+    width: 41px;
+    height: 41px;
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+main {
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    margin-top: -40px;
+}
+
+button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+button>img {
+    width: 60px;
+}
+
+.container-pergunta {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+#caixa {
+    background-color: #ffffff;
+    border: 1px solid #c6dfc6;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    font-family: "Afacad", sans-serif;
+    width: 800px;
+
+}
+
+#pontuacao {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #134d28;
+    margin-bottom: 12px;
+    font-family: "Afacad", sans-serif;
+
+}
+
+
+#pergunta {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #134d28;
+    margin-bottom: 16px;
+}
+
+
+.imagem-pergunta {
+    display: block;
+    margin: 12px auto;
+    max-width: 50%;
+    border-radius: 8px;
+}
+
+
+#respostas {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn {
+    padding: 12px 20px;
+    border-radius: 8px;
+    border: none;
+    background-color: #f2f2f2;
+    font-size: 1.1rem;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    font-family: "Afacad", sans-serif;
+    font-weight: 400;
+}
+
+.btn:hover:not(:disabled) {
+    background-color: #e0e0e0;
+}
+
+.btn:disabled {
+    cursor: default;
+    opacity: 0.9;
+}
+
+.correto {
+    background-color: #a7d7a4 !important;
+    color: #1c3c1c;
+    font-weight: bold;
+}
+
+.incorreto {
+    background-color: #d9a5a5 !important;
+    color: #3c1c1c;
+    font-weight: bold;
+}
