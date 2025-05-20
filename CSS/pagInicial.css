@@ -4,7 +4,11 @@
 *{
     padding: 0;
     margin: 0;
-    
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: hidden;
 }
 
 header{
@@ -13,7 +17,8 @@ header{
     height: 10vh;
     background-color: #F5F5F5;
     align-items: center;
-    
+    padding: 3em;
+    font-size: 22px;
 }
 
 main{
@@ -22,7 +27,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: #F5F5F5;
-
+    padding-bottom: 300px;
 }
 
 .container{
@@ -31,6 +36,7 @@ main{
     flex-direction:column;
     width: 80vw;
     height: 50%;
+    
 }
 
 .content{
@@ -63,8 +69,8 @@ main{
 
 .btn{
     display: flex;
-    width: 30%;
-    height: 90%;
+    width: 28%;
+    height: 50px;
     justify-content: center;
     align-items: center;
     cursor: pointer;
@@ -93,9 +99,8 @@ h1{
 }
 
 header img{
-    width: 30px;
-    height: 30px;
-    margin-left: 100px;
+    width: 41px;
+    height: 41px;
     margin-right: 20px;
 }
 
