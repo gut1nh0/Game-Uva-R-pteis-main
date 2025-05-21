@@ -1,16 +1,16 @@
-/* #crocodilianos.top-conteudo{
-    margin-top: -50px;
-} */
+#crocodilianos.top-conteudo{
+    margin-top: -20px;
+}
 
 
 #crocodilianos.bottom-conteudo{
-    left: 20px;
+    margin-left: 20px;
     margin-top: 20px;
 }
 
 #crocodilianos.bottom-conteudo h2{
-    position: relative;
-    right: 10px;
+    /* position: relative; */
+    margin-right: 10px;
     color: #0A3E0A;
     font-size: 28px;
 }
@@ -18,14 +18,9 @@
 #crocodilianos.bottom-conteudo-bottom{
     display: flex;
     gap: 40px;
-    position: relative;
-    right: 100px;
-    width: 1100px;
-}
-
-
-.campo-img{
-    position: relative;
+    /* position: relative; */
+    margin-right: 100px;
+    width: 1000px;
 }
 
 #crocodilianos.cards-container{

@@ -1,16 +1,20 @@
+
+
+
 #lagarto .titulo{
     width: 85%;
 }
 
 #lagarto.campo-imagem {
-    position: relative;
-    bottom: 180px;
+    /* position: relative;  */
+    margin-bottom: 180px;
+    margin-top: -180px;
 }
 
 #lagarto.campo-imagem img[data-id="2"]{
-    position: relative;
-    left: 60px;
-    bottom: 50px;
+    /* position: relative; */
+    margin-left: 60px;
+    margin-bottom: 50px;
 }
 
 
@@ -24,8 +28,8 @@
 }
 
 
-#lagarto.cards-container{
-    position: relative;
-    bottom: 130px;
+#lagarto.top-conteudo{
+    display: flex;
+    justify-content: center;
+    height: 600px;
 }
-

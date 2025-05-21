@@ -7,25 +7,30 @@
     margin: 0;
 }
 
-header{
+header {
     display: flex;
     width: 100vp;
+    height: 10vh;
     background-color: #F5F5F5;
     align-items: center;
     padding: 3em;
+    gap: 40px;
+    
 }
 
-h1{
+.logo {
+    display: flex;
+    align-items: center;
     font-family: "Keania One", sans-serif;
     color: #0A3E0A;
-    font-size: 44px;
+    font-size: 22px;
+    margin-top: -50px;
 }
 
 
-header img {
+.logo img {
     width: 41px;
     height: 41px;
-    margin-left: 100px;
     margin-right: 20px;
 }
 

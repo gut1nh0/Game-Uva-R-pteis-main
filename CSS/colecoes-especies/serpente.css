@@ -1,4 +1,10 @@
 #serpente.cards-container{
-    position: relative;
-    top: 120px;
+    /* position: relative; */
+    margin-top: 120px;
+    
 }
+
+#serpente.bottom-conteudo{
+    margin-top: 50px;
+}
+

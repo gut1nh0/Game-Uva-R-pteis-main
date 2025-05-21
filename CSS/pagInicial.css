@@ -11,14 +11,30 @@ body{
     overflow-y: hidden;
 }
 
-header{
+header {
     display: flex;
     width: 100vp;
     height: 10vh;
     background-color: #F5F5F5;
     align-items: center;
     padding: 3em;
+    gap: 40px;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-family: "Keania One", sans-serif;
+    color: #0A3E0A;
     font-size: 22px;
+}
+
+
+.logo img {
+    width: 41px;
+    height: 41px;
+    margin-right: 20px;
 }
 
 main{

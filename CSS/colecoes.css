@@ -98,7 +98,7 @@ main {
     top: 0;
     z-index: 100;
     padding-top: 1em;
-    
+
 }
 
 
@@ -181,14 +181,14 @@ main {
 
 .top-conteudo {
     display: flex;
-    position: relative;
-    top: 40px;
-    left: 20px;
+    /* position: relative; */
+    margin-top: 40px; 
+    margin-left: 20px;
 }
 
 .top-conteudo h2 {
-    position: relative;
-    right: 15px;
+    /* position: relative; */
+    margin-right: 15px;
     color: #0A3E0A;
 }
 
@@ -207,8 +207,8 @@ main {
 }
 
 .bottom-conteudo {
-    position: relative;
-    top: 50px;
+    /* position: relative; */
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
 
