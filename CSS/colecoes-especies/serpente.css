@@ -5,6 +5,10 @@
 }
 
 #serpente.bottom-conteudo{
-    margin-top: 50px;
+    margin-top: 20px;
+    margin-bottom: -30px;
 }
 
+#serpente.caracteristicas p{
+    width: 80%;
+}
