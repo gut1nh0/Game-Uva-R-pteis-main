@@ -52,7 +52,7 @@ header {
 }
 
 header img {
-    width: 30px;
+    width: 40px;
 }
 
 main {
@@ -100,7 +100,6 @@ main {
 }
 
 
-
 .btn-colecao {
     height: 40px;
     width: auto;
@@ -116,6 +115,7 @@ main {
 .btn-ativado {
     background: var(--cor-botoes);
     color: white;
+    border: none;
 }
 
 .btn-colecao:hover {
@@ -239,7 +239,7 @@ main {
     transition: transform 0.5s ease;
     border-radius: 15px;
     overflow: hidden;
-    transition: ease-in 0.2s;
+    transition: ease-in 0.1s;
 }
 
 .card:hover{

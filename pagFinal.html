@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,15 @@
     <link rel="stylesheet" href="../CSS/pagFinal.css">
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <img src="./img/logo.png">
-        <h1>
-            ReptiQuest
-        </h1>
+        <div class="logo">
+            <img src="./img/logo.png">
+            <h1>
+                ReptiQuest
+            </h1>
+        </div>
     </header>
     <main>
         <div class="container">
@@ -26,19 +30,20 @@
                 <button class="btn btn1" onclick="location.href='pergunta.html'"">
                     <p>Tentar Novamente</p>
                 </button>
-                <button class="btn btn2" onclick="location.href='index.html'">
+                <button class=" btn btn2" onclick="location.href='index.html'">
                     <p>Voltar ao Início</p>
                 </button>
             </div>
         </div>
-        
+
     </main>
 
 </body>
 
 <script>
-    const urlParams = new URLSearchParams(window.location.search);
-    const score = urlParams.get("score") || 0;
-    document.getElementById("pontuacao-final").innerText = `Sua pontuação final foi: ${score} pontos!`;
+    const params = new URLSearchParams(window.location.search);
+    const score = params.get("score");
+    document.getElementById("pontuacao-final").innerText = `Sua pontuação: ${score}`;
 </script>
+
 </html>

@@ -2,9 +2,10 @@ const elementoPergunta = document.getElementById("pergunta");
 const respostaBtn = document.getElementById("respostas");
 const elementoQuiz = document.getElementById("caixa");
 const elementoPontuacao = document.getElementById("pontuacao");
+let respondeu = false
 
 const styleSemImg = "pergunta-sem-img";
-const styleComImg = "vf-com-img";
+const styleComImg = "pergunta-com-img";
 const styleVF = "vf-sem-img";
 const styleVFimg = "vf-com-img";
 
@@ -112,7 +113,7 @@ let perguntas = [
     "pergunta": "Essa mandíbula pertence a um jacaré ou um crocodilo?",
     "imagem": "./img/quiz-image/jacare/q22.png",
     "alternativas": ["Jacaré", "Crocodilo"],
-    "correta": 1
+    "correta": 0
   },
   {
     "tipo": "multipla",
@@ -125,7 +126,7 @@ let perguntas = [
     "tipo": "vf",
     "pergunta": "Os crocodilos possuem mandíbulas mais fracas que os jacarés.",
     "imagem": null,
-    "alternativas": ["Falso","Verdadeiro"],
+    "alternativas": ["Falso", "Verdadeiro"],
     "correta": 0
   },
   {
@@ -195,12 +196,10 @@ function mostrarPergunta() {
 
   pergunta.alternativas.forEach((alternativa, index) => {
     const botao = document.createElement("button");
-    const letra = String.fromCharCode(65 + index); // A, B, C, ...
-    botao.innerText = `${letra}. ${alternativa.trim()}`;
+    botao.innerText = `${alternativa.trim()}`;
     botao.classList.add("btn");
     botao.dataset.index = index;
 
-    // Marcar se já respondeu
     if (respostasUsuario[perguntaAtual] !== null) {
       botao.disabled = true;
       if (index === perguntas[perguntaAtual].correta) {
@@ -221,46 +220,56 @@ function resetEstado() {
 }
 
 function selecionar(e) {
+  if (respostasUsuario[perguntaAtual] !== null) {
+    return;  // Já respondeu, evita somar mais pontos!
+  }
+
   const botaoSelecionado = e.target;
   const respostaIndex = parseInt(botaoSelecionado.dataset.index);
   const correta = perguntas[perguntaAtual].correta;
 
-  if (respostasUsuario[perguntaAtual] === null) {
-    if (respostaIndex === correta) {
-      score += 100;
-    }
-  }
-
   respostasUsuario[perguntaAtual] = respostaIndex;
-  atualizarPontuacao();
 
   if (respostaIndex === correta) {
+    score += 100;  
     botaoSelecionado.classList.add("correto");
   } else {
     botaoSelecionado.classList.add("incorreto");
   }
 
+  // Desabilitar todos
   Array.from(respostaBtn.children).forEach(btn => {
     btn.disabled = true;
     if (parseInt(btn.dataset.index) === correta) {
       btn.classList.add("correto");
     }
   });
+
+  atualizarPontuacao();
 }
+
+
+
 
 function atualizarPontuacao() {
   elementoPontuacao.innerText = `Pontuação: ${score}`;
 }
 
 function proximaPergunta() {
+  if (respostasUsuario[perguntaAtual] === null) {
+    alert("Responda antes de prosseguir!");
+    return;
+  }
+
   if (perguntaAtual < perguntas.length - 1) {
     perguntaAtual++;
     mostrarPergunta();
   } else {
-    // Redireciona para a página de resultado com score
     window.location.href = `pagFinal.html?score=${score}`;
   }
 }
+
+
 
 function voltarPergunta() {
   if (perguntaAtual > 0) {
