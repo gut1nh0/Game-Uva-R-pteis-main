@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -15,11 +16,10 @@ header {
     display: flex;
     width: 100vp;
     height: 10vh;
-    background-color: #F5F5F5;
     align-items: center;
     padding: 3em;
     gap: 40px;
-
+    background-color: #F5F5F5;
 }
 
 .logo {
